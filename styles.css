@@ -1,12 +1,13 @@
 .main-container {
-    width: 1440px;
-    margin: 0;
+    max-width: 2000px;
+    margin: 0 auto;
 }
 
 /* Header CSS */
 
 .header-img {
     width: 100vw;
+    height: auto;
 }
 
 /* Body CSS */
@@ -19,14 +20,20 @@ body {
 
 .navbar {
     display: flex;
-    position: absolute;
+    justify-content: flex-end;
     align-items: center;
-    top: 0;
+    position: absolute;
+    top: 24px;
+    width: 100%;
     max-height: 112px;
 }
 
-.navbar a {
+.links {
     display: flex;
+}
+
+.links a {
+    margin-right: 20px;
     text-decoration: none;
     color: white;
     font-family: "Raleway", sans-serif;
@@ -34,8 +41,8 @@ body {
 }
 
 .sakura-logo {
-    display: flex;
-    margin-top: 24px;
+    position: absolute;
+    top: 24px;
     margin-bottom: 24px;
     margin-left: 160px;
     width: 64px;
@@ -44,13 +51,45 @@ body {
 
 .telefon {
     display: flex;
+    align-items: center;
     border: 2px solid aliceblue;
     border-radius: 5px;
     align-items: center;
-    background-color:  #9F0908;
+    padding: 5px;
+    background-color:#9F0908;
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+}
 
+.telefon a {
+    text-decoration: none;
+    color: white;
 }
 
 .telefon img {
     max-width: 20px;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    width: 100%;
+    color: white;
+    font-family: "Raleway";
+}
+
+.heading h1 {
+    font-size: 96px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+heading h2 {
+    font-size: 24px;
+    margin-top: 0;
 }
