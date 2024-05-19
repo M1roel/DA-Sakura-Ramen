@@ -1,86 +1,645 @@
-.header {
-    background-image: url(./img/hero_bg.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-position: bottom;
-    padding: 160px;
+/**************************/
+
+/* Html CSS */
+
+/**************************/
+
+html {
+    scroll-behavior: smooth;
 }
+
+/**************************/
+
+/* Header CSS */
+
+/**************************/
+
+.header {
+  background-image: url(./img/hero_bg.jpg);
+  height: 70vh;
+  background-size: cover;
+  background-position: bottom;
+  padding: 160px;
+}
+/**************************/
 
 /* Body CSS */
 
+/**************************/
+
 body {
-    margin: 0;
+  margin: 0;
+  background-color: white;
 }
+
+/**************************/
 
 /* Navbar CSS */
 
+/**************************/
+
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    left: 160px;
-    right: 160px;
-    top: 0;
-    height: 112px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 160px;
+  right: 160px;
+  top: 0;
+  height: 112px;
 }
 
 .links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .links a {
-    margin-inline: 20px;
-    text-decoration: none;
-    color: white;
-    font-family: "Raleway", sans-serif;
-    font-size: 24px;
+  margin-inline: 20px;
+  text-decoration: none;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+}
+
+.links a:hover {
+    color: burlywood;
 }
 
 .sakura-logo {
-    width: 64px;
-    height: 64px;
+  width: 64px;
+  height: 64px;
 }
 
 .telefon {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px solid aliceblue;
-    border-radius: 5px;
-    padding: 5px;
-    background-color:#9F0908;
-    font-family: "Raleway", sans-serif;
-    font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid aliceblue;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #9f0908;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
 }
 
 .telefon a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .telefon img {
-    max-width: 20px;
+  width: 20px;
 }
 
 .heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    font-family: "Raleway";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: "Raleway";
 }
 
 .heading h1 {
-    font-size: 96px;
-    font-weight: bold;
-    margin-bottom: 5px;
+  font-size: 96px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-heading h2 {
+.heading h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+/**************************/
+
+/* How to order CSS */
+
+/**************************/
+
+.how-to-order {
+  background-color: white;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  text-align: center;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.how-to-order h2 {
+  display: flex;
+  justify-content: center;
+  font-family: "Raleway";
+  font-size: 80px;
+  font-weight: bold;
+  padding-bottom: 64px;
+  margin: 0;
+}
+
+.order-choice {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Economica";
+  font-size: 56px;
+  font-weight: bold;
+  padding-bottom: 0px;
+  margin: 0;
+}
+
+.order-choice p {
+  padding-top: 16px;
+  margin: 0;
+}
+
+.order-choice img {
+  width: 128px;
+}
+
+/**************************/
+
+/* Our Menu CSS */
+
+/**************************/
+
+.our-menu {
+  background-image: url(./img/section_our_menu_bg.jpg);
+  background-size: cover;
+  background-position: bottom;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.our-menu h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.our-menu img {
+  width: 352px;
+}
+
+.our-menu h3 {
+  font-family: "Economica";
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+/**************************/
+
+/* CSS für die einzelnen Menues */
+
+/**************************/
+
+.tonkotsu-ramen {
+  display: flex;
+  padding-bottom: 56px;
+}
+
+.table-tonkotsu {
+  padding-left: 80px;
+}
+
+.spicy-miso-ramen {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 56px;
+}
+
+.table-spicy-miso {
+  padding-right: 80px;
+}
+
+.shio-ramen {
+  display: flex;
+}
+
+.table-shio {
+  padding-left: 80px;
+}
+
+/**************************/
+
+/* Allgemeines CSS für die Tabellen */
+
+/**************************/
+
+table {
+  font-family: "Raleway";
+  font-size: 32px;
+  font-weight: bold;
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+}
+
+td {
+  flex: 1;
+}
+
+td:first-child {
+  text-align: left;
+  padding-right: 200px;
+}
+
+td:last-child {
+  text-align: right;
+}
+
+.table-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+/**************************/
+
+/* Find Us At CSS */
+
+/**************************/
+
+.find-us-at {
+  background-color: white;
+  padding-top: 120px;
+  padding-bottom: 64px;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.find-us-at h2 {
+  display: flex;
+  justify-content: center;
+  font-family: "Raleway";
+  font-size: 80px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.adresse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8px;
+  font-family: "Raleway";
+  font-size: 24px;
+}
+
+.adresse img {
+  width: 24px;
+  height: 24px;
+}
+
+/**************************/
+
+/* Footer CSS */
+
+/**************************/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 144px;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  font-family: "Raleway";
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.footer-left img {
+  height: 44px;
+  margin: 10px;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right img {
+  height: 40px;
+  margin: 5px;
+}
+
+/**************************/
+
+/* Responsive Design CSS */
+
+/**************************/
+
+@media (max-width: 1100px) {
+  .header {
+    height: 70vh;
+    padding: 90px;
+  }
+
+  .heading h1 {
+    font-size: 80px;
+  }
+
+  .navbar {
+    left: 90px;
+    right: 90px;
+  }
+  .links a {
+    margin-inline: 18px;
+    font-size: 16px;
+  }
+
+  .sakura-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .how-to-order {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .how-to-order h2 {
+    font-size: 60px;
+  }
+
+  .order-choice img {
+    width: 100px;
+  }
+
+  .our-menu {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+  .our-menu h2 {
+    font-size: 60px;
+  }
+
+  .our-menu img {
+    width: 300px;
+  }
+
+  table {
+    font-size: 28px;
+  }
+
+  .find-us-at h2 {
+    font-size: 60px;
+  }
+
+  .adresse {
+    font-size: 18px;
+  }
+
+  .find-us-at {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+  footer {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}
+
+@media (max-width: 950px) {
+    .header {
+        height: 40vh;
+        padding: 70px;
+    }
+
+  .heading h1 {
+    font-size: 60px;
+  }
+
+  .our-menu {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .our-menu h2 {
+    font-size: 50px;
+  }
+
+  .our-menu img {
+    width: 250px;
+  }
+
+  table {
     font-size: 24px;
-    margin-top: 0;
+  }
+
+  .footer-left {
+    font-size: 38px;
+  }
+
+  .footer-left img {
+    height: 38px;
+    margin: 10px;
+  }
+
+  .footer-right img {
+    height: 35px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 850px) {
+  .our-menu {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .our-menu h2 {
+    font-size: 42px;
+  }
+
+  .our-menu img {
+    width: 250px;
+  }
+
+  table {
+    font-size: 18px;
+  }
+
+  .footer-left {
+    font-size: 28px;
+  }
+
+  .footer-left img {
+    height: 28px;
+    margin: 10px;
+  }
+
+  .footer-right img {
+    height: 25px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 760px) {
+  .table-tonkotsu,
+  .table-spicy-miso,
+  .table-shio {
+    padding: 0;
+  }
+
+  .tonkotsu-ramen,
+  .spicy-miso-ramen,
+  .shio-ramen {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .spicy-miso-ramen img {
+    order: -1;
+  }
+
+  .spicy-miso-ramen .table-spicy-miso {
+    order: 1;
+  }
+}
+
+@media (max-width: 650px) {
+    .header {
+        height: 30vh;
+        padding: 50px;
+    }
+
+  .heading h1 {
+    font-size: 40px;
+  }
+
+  .navbar {
+    justify-content: center;
+  }
+
+  .heading h2 {
+    font-size: 20px;
+  }
+
+  .links a {
+    margin-inline: 10px;
+    font-size: 12px;
+  }
+
+  .telefon a,
+  .sakura-logo {
+    display: none;
+  }
+
+  .how-to-order {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .how-to-order h2 {
+    font-size: 50px;
+  }
+
+  .order-choice p {
+    font-size: 40px;
+  }
+
+  .find-us-at {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .find-us-at h2 {
+    font-size: 50px;
+  }
+
+  .adresse {
+    font-size: 12px;
+  }
+
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer-left {
+    font-size: 18px;
+  }
+
+  .footer-left img {
+    height: 18px;
+    margin: 10px;
+  }
+
+  .footer-right img {
+    height: 25px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 450px) {
+    .header {
+        height: 30vh;
+        padding: 20px;
+    }
+
+  .heading h1 {
+    padding-top: 50px;
+    font-size: 24px;
+  }
+
+  .heading h2 {
+    font-size: 18px;
+  }
+
+  .how-to-order {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .how-to-order h2 {
+    font-size: 38px;
+  }
+
+  .order-choice {
+    flex-direction: column;
+  }
+
+  .our-menu img {
+    width: 200px;
+  }
+
+  table {
+    font-size: 18px;
+  }
+
+  .find-us-at h2 {
+    font-size: 35px;
+  }
+
+  .adresse {
+    font-size: 12px;
+  }
+
+  footer {
+    justify-content: center;
+    flex-direction: column;
+  }
 }
