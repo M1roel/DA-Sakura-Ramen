@@ -626,6 +626,7 @@ footer {
 
   .order-choice {
     flex-direction: column;
+    gap: 24px;
   }
 
   .our-menu img {
